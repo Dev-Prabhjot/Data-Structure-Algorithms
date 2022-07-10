@@ -1,0 +1,16 @@
+Heap is implemented using Binary Tree
+Heap uses inbuilt Library in Java PriorityQueue.
+Min Heap: Min at top,pop min
+Max Heap: Max at top,pop max
+
+Algo:
+
+Min Heap:If element Greater than minHeap.peek()         EGMin
+if(arr[i]>minHeap.peek())
+minHeap.poll()
+minHeap.add(arr[i])
+
+Max Heap: element Lesser than maxHeap.peek()            ELMax
+if(arr[i]<maxHeap.peek())
+maxHeap.poll()
+maxHeap.add(arr[i])
