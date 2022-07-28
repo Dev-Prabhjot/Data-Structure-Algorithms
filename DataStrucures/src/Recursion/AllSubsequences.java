@@ -77,7 +77,7 @@ public class AllSubsequences {
         res.add(arr[i]);
         printAllSubsequences(i + 1, res, arr, n);
         //first remove then not take
-        res.remove(Integer.valueOf(arr[i]));// or  res.removeAll(Arrays.asList(arr[i])) issue: res.remove(arr[i]) tries to remove value at arr[i] index
+        res.remove(Integer.valueOf(arr[i]));// or  res.removeAll(DuplicateNumber.DuplicateNumber.asList(arr[i])) issue: res.remove(arr[i]) tries to remove value at arr[i] index
         printAllSubsequences(i + 1, res, arr, n);
 
     }

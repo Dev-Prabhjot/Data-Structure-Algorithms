@@ -2,8 +2,12 @@ package Heap;
 
 import java.util.PriorityQueue;
 
+//https://www.youtube.com/watch?v=Eb1A6nm_Nic&list=PLUcsbZa0qzu3yNzzAxgvSgRobdUUJvz7p&index=35
 public class ConnectNRopesWithMinCost {
-
+    public static void main(String[] args) {
+        int arr[] = {3, 4, 7, 2};
+        System.out.println(connectRopeWithMinimumCost(arr));
+    }
 
     ///Tc: nLogn
     //If would have done using normal sort then Tc : n (nLogn) = n^2Logn Hence usng heap Tc improves to nLogn
@@ -29,8 +33,5 @@ public class ConnectNRopesWithMinCost {
         return totalMinCost;
     }
 
-    public static void main(String[] args) {
-        int arr[] = {3, 4, 7, 2};
-        System.out.println(connectRopeWithMinimumCost(arr));
-    }
+
 }
